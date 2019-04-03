@@ -58,7 +58,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .welcome { 
   width: 100%;
   background: url(../images/custom.jpg) no-repeat;
-  background-size: 100% 800px;
+  background-size: 100%;
   color: #fff;
   }
   .welcome h3 { margin-bottom: 20px;}
@@ -68,10 +68,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     background-size: 100%;
     color: #fff;
     padding: 5rem 0 0 0;
-    text-align: center;
+    min-height: 150px;
     }
 .welcome-message { margin-bottom: 50px;}
 .welcome-message2 { margin-bottom: 5px; width: 60%; margin: 0 auto;}
+.welcome-apply { 
+  width: 100%;
+  background: url(../images/custom.jpg) no-repeat;
+  background-size: 100% 500px;
+  color: #fff;
+  padding: 10rem 0 0 0;
+  text-align: center;
+  }
 .career-container {
   background: #fff;
   min-height:  400px;
@@ -119,7 +127,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 /* Apply section */
 .apply {
   width:  100%;
-  margin: 50px 0px 100px 0px;
+  margin: 50px 0px;
 }
 /*.apply .col-md-6 {
   margin: 0;
@@ -140,7 +148,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   color: #fff;
 }
 .apply .sec2 {
-  background:  #1e73be url(../images/sec2.png) no-repeat top;
+  background:  #2A4134 url(../images/sec2.png) no-repeat top;
   background-size: cover;
   color: #fff;
 }
@@ -148,7 +156,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   padding: 50px 30px;
   text-align:  center;
 }
-.apply .sec1 .btn,.apply .sec2 .btn { margin-top: 20px; border-radius: 0;}
+.apply .sec1 .btn,.apply .sec2 .btn { margin-top: 20px; border-radius: 5px;}
 .apply .sec1 h3,.apply .sec2 h3 { font-size: 2em; font-weight: 400; margin-bottom: 20px;}
 .apply .sec1 h3 {color: #fff;}
 .apply .sec1:hover,.apply .sec2:hover{
@@ -180,6 +188,7 @@ a.login-btn {
 .about {
   width: 100%;
   padding-bottom: 40px;
+  min-height: 400px;
 }
 /*--Footer */
 .rfooter {
@@ -914,5 +923,153 @@ iframe {
 .bg-custom {
   background: #74947d;
 }
+.bg-gradient {
+  background: #393e9e;
+  background: -webkit-linear-gradient(to right, #797cd2, #393e9e);
+  background: linear-gradient(to right, #797cd2, #393e9e);
+}
+
+.bg-overlay-gradient {
+  background: #393e9e;
+  background: -webkit-linear-gradient(to right, #797cd2, #393e9e);
+  background: linear-gradient(to right, #797cd2, #393e9e);
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.h-100vh {
+  height: auto;
+}
+.home-bg {
+  background: #393e9e;
+  background: -webkit-linear-gradient(to right, #797cd2, #393e9e);
+  background: linear-gradient(to right, #797cd2, #393e9e);
+  position: relative;
+  padding-top: 180px;
+}
+
+.bg-overlay-home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+}
+
+.curv-img {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  z-index: 1;
+}
+
+.curv-img svg {
+  display: block;
+}
+
+.bg-overlay-home {
+  background-size: auto;
+  -webkit-animation: bg-animation 7s ease-in-out infinite;
+  animation: bg-animation 7s ease-in-out infinite;
+}
+
+@-webkit-keyframes bg-animation {
+  0% {
+      background-position: top;
+  }
+  50% {
+      background-position: bottom;
+  }
+  100% {
+      background-position: top;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+      background-position: top;
+  }
+  50% {
+      background-position: bottom;
+  }
+  100% {
+      background-position: top;
+  }
+}
+
+.home-table-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.home-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+
+.bg-overlay-home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+}
+
 
 .p-10 { padding: 8% 4%;}
+
+/* Another Login */
+/*--- LOGIN/SIGN In/FORGOT---*/
+
+
+.account_box{
+  border-radius: 12px;
+  box-shadow: 10px -10px 0 4px #0ebdca;
+  padding: 50px 40px;
+}
+
+.account_box h5{
+  font-size: 20px;
+  max-width: 300px;
+  line-height: 1.4;
+}
+
+.account_box .form-control{
+  box-shadow: none !important;
+  color: #fff;
+  height: 46px;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.account_box .form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.account_box .form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.account_box .form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.account_box .form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(255, 255, 255, 0.6);
+}
